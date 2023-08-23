@@ -1,0 +1,160 @@
+/* >ESTUDOS DE CSS<
+
+        >FONTE<
+
+estilo da fonte === font-style
+peso da fonte === font-weight
+tamanho da fonte === font-size
+fonte === font-family
+importar fonte externa === @font-face
+variação de uma fonte === font-varient
+alargar ou encolher a fonte === font-stretch
+espaço entre letras === letter-spacing
+espaço entre palavras === word-spacing
+espaço entre linhas === line-height
+transformar o texto (tudo maiusculos p/ex) === text-transform
+decorar o texto (sublinha) === text-decoration
+alinhamento do texto (onde ele começa) === text-align
+sombra das letra === text-shadow
+
+
+        >PLANO DE FUNDO<
+
+plano de fundo === background
+cor de fundo === background-color
+imagem de fundo === background-image
+repetir o plano de fundo === background-repeat
+posição do plano de fundo === background-position
+pra cobrir todo o plano de fundo === cover
+Pra imagem fica dentro do plano de fundo === contain
+origem da imagem === background-origin 
+pra imagem começar apartir da borda === border-box
+pra imagem começar apartir do padding === padding-box
+pra imagem e cor de funod começar a partir de... === background-clip
+pro plano de fundo ser fixo na hora de rolar a page === background-attachment
+fixar === fixed
+gradiente em linha === linear-gradient
+gradiente em circulo === radial-gradient
+linha do link === list-style-type
+
+
+>COR<
+
+cor === color
+rgb
+hsl
+
+
+        >NUMEROS E UNIDADES DE MEDIDA<
+
+largura === width
+altura === heigth
+Numero inteiro === integer
+Numero decimal === number
+Porcentagem === percentagem
+valor de distancia (px, em, vw) === length
+angulo === angle
+tempo === time
+resolução pra um dispositivo === resolution
+numero com medida (90 deg, 2s, 8px) === dimension
+posição (left, rigth, center, bottom, top) === position
+calculo de alguma coisa === calc
+
+
+        >UNIDADES FIXAS<
+
+cm    | Centímetros          1cm = 96px/2.54       
+in    | Inches (polegadas)   1in = 2.54cm = 96px   
+px    | Pixels               1px = 1/96th of 1in 
+
+
+        >UNIDADES RELATIVAS<
+
+em  | Tamanho da font do elemento pai
+rem | Tamanho da font do elemento raiz (root/html)
+vw  | 1% da viewport width
+vh  | 1% da viewport height
+
+
+        >BOX MODEL<
+
+espaço para todos os lados === margin
+preenchimento interno (espaço de dentro) === padding
+borda === border
+tamanho da caixa === box-sizing: border-box
+como aparece (display) === block ou inline
+
+
+        <LAYOUT>
+
+posição dos elementos === position
+posição relativa === relative
+posição da 2º camada === absolute
+posição fixa em relação a page === fixed
+trazer pra frente ou pra tras um elemento === z-index(1, 2 ,3)
+
+flexbox === flex direction, display: flex
+
+justificar um conteudo === justify-content
+colocar espaço entre os elementos q estao na caixa === space-between
+alinhar no centro da caixa === space-between
+alinhar a caixa no centro da page === align-items
+
+grid === grid-template-areas, grid-area, grid-template-rows, grid-template-columns
+
+area das caixas === grid-template-areas
+area selecionada pra caixa === grid-area
+controlar as linhas da caixa === grid-template-rows
+controlar as colunas da caixa === grid-template-columns
+
+
+        >IMPORTANTE<
+
+importancia maxima (nao usar) === !important
+Importar um css externo === @import
+regras condicionais para dispositivos === @media
+animações === @keyframes
+conteudo === content
+
+reassistir aula sobre cascata e especifidade
+rever todos os videos sobre css
+reassistir aulas sobre flexmodel e grid
+imagens aleatorias === https://source.unsplash.com/random
+entender o css na pratica === https://fonts.google.com/ https://css-tricks.com/snippets/css/using-font-face-in-css/
+
+*/
+
+body {
+    margin: 0;
+    
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+  }
+  
+  header {
+    background-color: orange;
+    
+    grid-area: header;
+    display: flex;
+  }
+  
+  main {
+    background-color: yellow;
+    
+    grid-area: main;
+  }
+  
+  aside {
+    background-color: purple;
+    
+    grid-area: aside;
+  }
+  
+  footer {
+    background-color: pink;
+    
+    grid-area: footer;
+  }

@@ -1,0 +1,455 @@
+<!--Estudos para dev
+
+                >TEXTO<
+
+Titulos === h1 h2 h3 h4 (não usar mais q 3 na msm page)
+Paragrafo === p
+Importancia === em
+Negrito === strong ou b
+Quebra de linha no text === br
+abreviação/explicação de um termo === abbr
+quem fez a pagina/contato === address
+bota codigo na pagina === code > pre
+agupar texto (ex. produto e o valor) === span
+deixa o conteudo em uma unica linha === inline-block
+conteudo da page === main
+conteudo da lateral === aside
+rodapé === footer
+
+                >LISTA<
+
+Lista === l1 
+lista numerada === ol
+listagem com pontinho === ul
+
+                >EXTENSOES<
+
+Link  === a
+Imagem === img
+lista de descrição === dl > dt > dd (p/ glossario)
+<target === pra onde vai quando eu clico no link
+_self === padrao
+_blank === abre em outra page
+Email === mailto:
+Telefone === tel:[]
+Barra de navegaçao === nav
+Meta === serve para uns negocio dificil de explica
+ligar uma coisa a outra === link
+colocar titulos visiveis pra imagens === tag figure e figcaption e o titulo
+
+
+                >PONTUAÇÃO<
+
+Espaço do paragrafo === &nbsp;
+&lt; === <
+&gt; === >
+&amp; === &
+&quot; === “” dupla
+&apos; === ‘’ simples
+
+                >TABELA<
+
+tabela === table
+linha da tabela === tr
+cabesalho === th
+conteudo da linha === tr
+titulo da tabela === caption
+cabesalho vai dentro === thead
+conteudo da tabela vai dentro === tbody
+roda pé da tabela === tfoot
+ocupar linhas === rowspan
+ocupar coluna === colspan
+colgroup === agupar as colunas 
+coluna === col
+espaço da coluna === span
+(para os leitores de tela) === scope
+
+                >NAVEGAR POR DIRETORIOS<
+
+Ir para outra pagina na msm pasta === so escreve o nome do arquivo
+Ir pra outra pagina em outra pasta === pasta/pagina.html
+Voltar pra pagina de dentro pra fora da pasta === ../pagina.html
+de uma pasta ir para outra pasta === ../pasta/pagina.html
+
+                >VIDEO E AUDIO<
+
+colocar audio na page === audio
+
+colocar video na page === video
+busca o video no pc e coloca na page === scr
+controles para o video(play, pause) === controls
+usar tag source pra colocar o video (<source scr="video"> )
+usar tag type pra dizer o que é (video/mp4)
+tocar video automatico === autoplay
+video ser lido automatico === preload="auto"
+video ser lido so o basico === preload="metadata"
+video n ser lido === preload="none"
+video reiniciar auto === loop
+video começar mutado === muted
+colocar thunbnail no video === poster
+
+colocar video na page sem hospedar no servidor === iframe
+configurações do video === allow
+deixar em tela cheia === allowfullscreen
+
+                >FORMULARIOS<
+
+criar um formulario === form
+pra onde é enviado os dados === action
+como é enviado os dados === method(POST ou GET)
+Enviar de forma padrao === GET
+enviar sem mostrar na page === POST
+
+agrupar as informações p/ colocar dados na page === fieldset
+titulo do fieldset === legend
+linkar o fieldset com a tag form === atributo form
+nome do fieldset === name
+
+identificar uma teg de entrada de dados === label
+linkar o label com outra tag === for
+
+botao pra enviar formulario === button
+type === submit (enviar)/ reset (limpar o formulario)
+quando apertar enter vai ser enviado === autofocus
+desabilitar uma funçao === disabled
+valor de algum campo === value
+
+lista de valores como sugestao para uma tag input === datalist
+opçoes para a tag input === option
+
+colocar dados === input
+(type) colocar um input com calendario === date
+(type) colocar espaço apenas pra numeros === number
+(type) colocar apenas email === email
+(type) colocar um componente pra puxar arquivos === file
+(type) colocar espaço pra senha === password
+(type) espaço para textos === text
+sugestao de um termo ja usado anteriormente (ex: email) === autocomplete
+dar foco a alguma coisa === autofocus
+colocar apenas para leitura === readonly
+desabilitar um espaço === disabled
+tornar um campo obrigatorio === required
+texto de sugestao === placeholder(nao trocar o label por esse)
+
+(type) colocar espaço pra senha === password
+numero maximo e minimo de caracteres === maxlength / minlength
+tamanho do campo === size
+validar o q é digitado na senha === pattern
+abrir so um teclado numerio (p/ cell) === inputmode="numeric"
+permite sugestao de senha === autocomplete
+
+(type) colocar apenas email === email
+colocar 1 ou mais emails no campo === multiple
+numero maximo e minimo de caracteres === maxlength / minlength
+validar o q é digitado no email === pattern
+ista de valores como sugestao para uma tag input === datalist
+opçoes para a tag input === option
+
+(type) colocar espaço para envio de arquivos === file
+qual tipo de arquivo vai ser aceito === action="tipo do arquivo"
+onde fica o arquivo === value
+colocar varios arquivos === multiple
+em formularios de (type) file usar sempre === method="post" enctype="multpart/form-data"
+
+(type) colocar uma url === url
+verificar correção ortografica p/ o campo selecionado === spellcheck (true ou false)
+
+(type) colocar um campo pra escolher uma cor === color
+value="rgb"
+
+(type) Colocar uma caixinha q pode ser marcada === checkbox
+usar name, id e label
+deixar ja marcada a caixa === checked
+
+(type) colocar um campo escondido === hidden
+usar name e id
+é invisivel ao usuario e é enviado junto com o formulario
+
+(type) colocar um espaço de opçao pra selecionar algo entre varias opções === radio
+deixar o espaço ja marcado === checked
+usar name, id, value e label
+
+colocar um espaço para textos grandes com varias linhas === textarea
+usar id, name e label
+tamanho da area do texto === row e cols
+numero maximo e minimo de caracteres === maxlength e minlength
+os textos passam da area ou nao === wrap
+É possivel usar no textarea === autocomplete, autofocus, disabled, placeholder, readonly, form e required
+
+colocar um controle que fornece um menu de opçoes === select
+opcoes do menu === option
+necessario usar value
+selecionar multiplas opções === multiple
+quantas opções sao visiveis === size
+
+agrupar opçoes === optgroup
+usar seguido do atributo label como uma forma de titulo
+
+(type) colocar uma campo de busca === search
+pode usar um datalist, placeholder e size
+pode usar a tag button
+colocar uma estrutura para esse campo de buscar por termos semelhantes === pattern
+usar title quando tiver um pattern defino
+para leitor de tela, quando n tem o label === aria-label
+
+(type) colocar um campo q entre apenas numeros === number
+numero minimo e maximo de numeros === min / max
+pular numeros entre (ex 10 em 10) === step
+pode usar placeholder, e list p/ linkar com datalist
+
+(type) colocar campo com data === date
+(type) colocar campo com data e hora === datetime-local
+(type) colocar campo com mes === month
+(type) colocar campo com semana === week
+(type) colocar campo com horario === time
+
+>IMPORTANTE<
+
+https://developer.mozilla.org/pt-BR/
+https://caniuse.com
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo G. Kmiecik">
+    <meta name="description" content="Entenda o porquê de skate ser uma forma de arte.">
+    <title>Skate é arte</title>
+    <link rel="icon" href="https://skateparkoftampa.com/spot/productimages/colors/109_81428.jpg">
+    <link rel="stylesheet" href="../css/estudos-css.css">
+</head>
+<body>
+
+<!--
+    BARRA DE NAVEGAÇÂO
+-->
+
+<header>
+    <nav>
+      <ul>
+          <li><a href="Lista.html">Lista</a></li>
+          <li><a href="lista-de-itens.html">Itens</a></li>
+          <li><a href="tabela-simples.html">Tabela simples</a></li>
+          <li><a href="tabela-complexa.html">Tabela complexa</a></li>
+          <li><a href="sobre-mim.html">Sobre mim</a></li>
+      </ul>
+  </nav>
+  </header>
+  
+  <!--
+      TEXTOS
+  -->
+  
+  <main>
+    <div id="titulos-e-subtitulos">
+      <h1 id="skate-e-arte">Skate é arte</h1>
+  </div> 
+  
+  <div id="conteiner_skate-e-arte"><p>
+      Skate é arte porque cada <em>pessoa</em> 
+      manda as manobras
+       <em> <strong>diferentemente</strong> </em>.
+  </p></div>
+  
+  
+  <div id="titulos-e-subtitulos">
+      <h2 id="o-skatista">O skatista</h2>
+  </div>
+  
+  <p>
+      A <em>personalidade</em> de cada pessoa <strong>reflete</strong>  no skate,
+       assim como a <em>intenção</em> de como mandar a manobra.
+  </p>
+  
+  
+  <div id="titulos-e-subtitulos">
+      <h2 id="o-compromisso">O comprosmisso</h2>
+  </div>
+  
+  <p>
+      Apesar de eu achar que apenas pessoas que tem o <em><strong>compromisso</strong></em> com o skate conseguirem.
+  </p>
+  
+  <a href="https://www.youtube.com/watch?v=CJYtwuWa2Qs&list=WL&index=4&t=87s" target="_blank">
+      Veja na pratica como é.</a>
+  </main>
+  
+         <!--
+      LISTA
+  -->
+  
+  <aside>
+    <div id="titulos-e-subtitulos">
+      <h2 id="peças-do-skate"> Peças do skate</h2>
+  </div>
+    
+  
+  <ul>
+      <li><a href="https://www.ratusskateshop.com.br/produtos/shape-maple-element-blazin-red-8-25/?variant=451425223" target="_blank">Shape</a></li>
+  
+      <li><a href="https://www.ratusskateshop.com.br/produtos/truck-independent-149mm-stage-11-polished-standard/?variant=491320876" target="_blank"><abbr title="Eixo do skate">Truck</abbr></a></li>
+  
+      <li><a href="https://www.ratusskateshop.com.br/produtos/roda-ricta-sparx-star-pink-53mm/?variant=263722759" target="_blank">Roda</a></li>
+  
+      <li><a href="https://www.ratusskateshop.com.br/produtos/rolamento-bones-reds/?variant=180192086" target="_blank">Rolamento</a></li>
+  
+      <li><a href="https://www.ratusskateshop.com.br/produtos/lixa-jessup-black/?variant=179870606" target="_blank">Lixa</a></li>
+  
+      <li><a href="https://www.ratusskateshop.com.br/produtos/parafuso-de-base-independent-precision-bolts-1-allen-black/" target="_blank">Parafuso de base</a></li>
+  </ul>
+  
+  <!--
+      LISTA DE ITENS
+  -->
+  <div id="titulos-e-subtitulos">
+      <h2>Itens</h2>
+  </div>
+  
+  <ul>
+      <li><a href="#skate-e-arte">Skate é arte</a></li>
+      <li><a href="#o-skatista">O skatista</a></li>
+      <li><a href="#o-compromisso">O compromisso</a></li>
+      <li><a href="#peças-do-skate">Peças do skate</a></li>
+      <li><a href="#sobre-mim">Sobre mim</a></li>
+      <li><a href="#tabela-simples">Tabela simples</a></li>
+      <li><a href="#tabela-complexa">Tabela complexa</a></li>
+     
+  </ul>
+  </aside>
+  
+  <!--
+      TABELA SIMPLES
+  -->
+  
+  <main>
+    <div id="titulos-e-subtitulos">
+      <h2 id="tabela-simples">Tabela simples</h2>
+  </div>
+  
+  <table>
+      <caption>Preço da peças</caption>
+  
+      <thead>
+          <th>Peça</th>
+          <th>Valor</th>
+      </thead>
+  
+      <tbody>
+          <tr>
+           <td>Shape</td>
+           <td>350,00</td>
+          </tr>
+         <tr>
+          <td>Truck</td>
+          <td>800,00</td>
+         </tr>
+         <tr>
+          <td>Roda</td>
+          <td>350,00</td>
+         </tr>
+         <tr>
+          <td>Rolamento</td>
+          <td>200,00</td>
+         </tr>
+         <tr>
+          <td>Lixa</td>
+          <td>100,00</td>
+         </tr>
+         <tr>
+          <td>Parafuso</td>
+          <td>40,00</td>
+         </tr>
+      </tbody>
+  </table>
+  
+  <!--
+      TABELA COMPLEXA
+  -->
+  
+  <div id="titulos-e-subtitulos">
+      <h2 id="tabela-complexa">Tabela complexa</h2>
+  </div>
+  
+  <table>
+      <caption>Produto x valor de duas lojas</caption>
+  
+      <colgroup>
+          <col>
+          <col span="2" style="background-color: red;">
+          <col span="2" style="background-color: green;">
+      </colgroup>
+  
+      <thead>
+          <tr>
+          <th rowspan="2"></th>
+          <th colspan="2" scope="colgroup">Ratus skate shop</th>
+          <th colspan="2" scope="colgroup">CB Skate shop</th>
+          </tr>
+          <tr>
+              <th scope="col">Nacional</th>
+              <th scope="col">Valor</th>
+              <th scope="col">importada</th>
+              <th scope="col">Valor</th>
+          </tr>
+      </thead>
+  
+      <tbody>
+          <tr>
+              <th scope="row">Truck</th>
+              <td>Intruder</td>
+              <td>200,00</td>
+              <td>Venture</td>
+              <td>700,00</td>
+          </tr>
+          <tr>
+              <th scope="row">Shape</th>
+              <td>Dropdead</td>
+              <td>300,00</td>
+              <td>Plan-B</td>
+              <td>500,00</td>
+          </tr>
+          <tr>
+              <th scope="row">Roda</th>
+              <td>Moska</td>
+              <td>180,00</td>
+              <td>Ricta</td>
+              <td>350,00</td>
+          </tr>
+          <tr>
+              <th scope="row">Rolamento</th>
+              <td>Everlong</td>
+              <td>90,00</td>
+              <td>Red bones</td>
+              <td>200,00</td>
+          </tr>
+      </tbody>
+  </table>
+  </main>
+  
+  <!--
+      CONTATO
+  -->
+  
+  <footer>
+    <div id="titulos-e-subtitulos">
+      <h2 id="sobre-mim">Sobre mim</h2>
+  </div>
+  
+  <address>
+      <p>Eduardo G. Kmiecik <br>
+          <strong>Fazenda Rio Grande, PR</strong>
+      </p>
+  </address>
+  </footer>
+  
+  </body>
+  </html>
+
+</body>
+</html>

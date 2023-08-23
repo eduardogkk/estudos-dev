@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://skateparkoftampa.com/spot/productimages/colors/109_81428.jpg">
+    <link rel="stylesheet" href="../css/estudos-css.css">
+    <title>Tabela complexa</title>
+</head>
+<body>
+
+<!--
+    BARRA DE NAVEGAÇÂO
+-->
+
+<nav>
+    <ul>
+        <li><a href="Skate-é-arte.html">Home</a></li>
+        <li><a href="Lista.html">Lista</a></li>
+        <li><a href="lista-de-itens.html">Itens</a></li>
+        <li><a href="tabela-simples.html">Tabela simples</a></li>
+        <li><a href="sobre-mim.html">Sobre mim</a></li>
+    </ul>
+</nav>
+
+    <!--
+    TABELA COMPLEXA
+-->
+
+<div id="titulos-e-subtitulos">
+    <h2 id="tabela-complexa">Tabela complexa</h2>
+</div>
+
+<table>
+    <caption>Produto x valor de duas lojas</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: green;">
+    </colgroup>
+
+    <thead>
+        <tr>
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Ratus skate shop</th>
+        <th colspan="2" scope="colgroup">CB Skate shop</th>
+        </tr>
+        <tr>
+            <th scope="col">Nacional</th>
+            <th scope="col">Valor</th>
+            <th scope="col">importada</th>
+            <th scope="col">Valor</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Truck</th>
+            <td>Intruder</td>
+            <td>200,00</td>
+            <td>Venture</td>
+            <td>700,00</td>
+        </tr>
+        <tr>
+            <th scope="row">Shape</th>
+            <td>Dropdead</td>
+            <td>300,00</td>
+            <td>Plan-B</td>
+            <td>500,00</td>
+        </tr>
+        <tr>
+            <th scope="row">Roda</th>
+            <td>Moska</td>
+            <td>180,00</td>
+            <td>Ricta</td>
+            <td>350,00</td>
+        </tr>
+        <tr>
+            <th scope="row">Rolamento</th>
+            <td>Everlong</td>
+            <td>90,00</td>
+            <td>Red bones</td>
+            <td>200,00</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
